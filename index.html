@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#11152f">
+  <meta name="description" content="ZodiaCup gizlilik politikası — Türkçe ve English.">
+  <title>ZodiaCup · Gizlilik / Privacy</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%2311152f'/%3E%3Cpath d='M16 23h29v14a13 13 0 0 1-13 13h-3a13 13 0 0 1-13-13V23Z' fill='none' stroke='%23e7bd66' stroke-width='4'/%3E%3Cpath d='M45 28h3a7 7 0 0 1 0 14h-5' fill='none' stroke='%23e7bd66' stroke-width='4'/%3E%3Cpath d='M25 9c-4 5 4 7 0 12M36 9c-4 5 4 7 0 12' fill='none' stroke='%23f3e7cc' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #f8f2e7;
+      --muted: #b9b7c8;
+      --night: #0a0d20;
+      --panel: #151a3c;
+      --line: #30375f;
+      --gold: #e7bd66;
+      --mint: #69d5c4;
+      --focus: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 82% 12%, rgba(105, 213, 196, .13), transparent 26rem),
+        radial-gradient(circle at 14% 78%, rgba(231, 189, 102, .12), transparent 28rem),
+        var(--night);
+      font: 1rem/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    a { color: inherit; }
+    a:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+    .skip-link {
+      position: fixed;
+      z-index: 3;
+      top: .75rem;
+      left: .75rem;
+      padding: .65rem 1rem;
+      border-radius: .55rem;
+      color: var(--night);
+      background: var(--focus);
+      transform: translateY(-180%);
+    }
+    .skip-link:focus { transform: translateY(0); }
+    .shell { width: min(70rem, calc(100% - 2rem)); margin-inline: auto; }
+    header { padding: 1.25rem 0; }
+    .brand { display: inline-flex; align-items: center; gap: .7rem; text-decoration: none; font-weight: 760; }
+    .mark {
+      display: grid;
+      width: 2.5rem;
+      height: 2.5rem;
+      place-items: center;
+      border: 1px solid rgba(231, 189, 102, .45);
+      border-radius: .8rem;
+      color: var(--gold);
+      background: rgba(231, 189, 102, .08);
+      font-size: 1.2rem;
+    }
+    main { display: grid; min-height: calc(100vh - 10rem); align-content: center; padding: 3rem 0 5rem; }
+    .eyebrow { margin: 0 0 .85rem; color: var(--mint); font-weight: 720; letter-spacing: .08em; text-transform: uppercase; font-size: .82rem; }
+    h1 { max-width: 13ch; margin: 0; font-size: clamp(2.5rem, 9vw, 5.8rem); line-height: .98; letter-spacing: -.055em; }
+    .intro { max-width: 44rem; margin: 1.5rem 0 0; color: var(--muted); font-size: clamp(1.05rem, 2vw, 1.25rem); }
+    .language-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 2.5rem; }
+    .language-card {
+      position: relative;
+      display: block;
+      min-height: 14rem;
+      padding: clamp(1.35rem, 4vw, 2rem);
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 1.25rem;
+      background: linear-gradient(145deg, rgba(27, 33, 73, .96), rgba(17, 21, 47, .96));
+      text-decoration: none;
+      transition: transform .18s ease, border-color .18s ease;
+    }
+    .language-card:hover { transform: translateY(-3px); border-color: var(--gold); }
+    .language-card::after {
+      content: "";
+      position: absolute;
+      right: -3rem;
+      bottom: -4rem;
+      width: 11rem;
+      height: 11rem;
+      border: 1px solid rgba(231, 189, 102, .25);
+      border-radius: 50%;
+      box-shadow: 0 0 0 1.5rem rgba(105, 213, 196, .04), 0 0 0 3rem rgba(231, 189, 102, .025);
+    }
+    .language-card small { color: var(--mint); font-weight: 700; letter-spacing: .06em; }
+    .language-card h2 { margin: 1.3rem 0 .4rem; font-size: clamp(1.55rem, 4vw, 2.25rem); line-height: 1.15; }
+    .language-card p { max-width: 28rem; margin: 0; color: var(--muted); }
+    .arrow { display: inline-block; margin-top: 1.6rem; color: var(--gold); font-weight: 760; }
+    footer { padding: 1.5rem 0 2.5rem; border-top: 1px solid rgba(48, 55, 95, .7); color: var(--muted); font-size: .92rem; }
+    footer .shell { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .75rem 1.5rem; }
+    @media (max-width: 42rem) {
+      .language-grid { grid-template-columns: 1fr; }
+      main { align-content: start; padding-top: 3.5rem; }
+      .language-card { min-height: 12rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .language-card { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">İçeriğe geç / Skip to content</a>
+  <header class="shell">
+    <a class="brand" href="./" aria-label="ZodiaCup gizlilik ana sayfası">
+      <span class="mark" aria-hidden="true">☾</span>
+      <span>ZodiaCup</span>
+    </a>
+  </header>
+  <main id="main" class="shell">
+    <p class="eyebrow">Gizlilik · Privacy</p>
+    <h1>Veriniz, açıkça anlatıldı.</h1>
+    <p class="intro">ZodiaCup’ın hangi verileri neden işlediğini, nelerin cihazınızda kaldığını ve seçimlerinizi iki dilde okuyun.</p>
+    <div class="language-grid" aria-label="Dil seçimi / Language selection">
+      <a class="language-card" href="privacy-policy.html#tr" hreflang="tr">
+        <small lang="tr">TÜRKÇE</small>
+        <h2 lang="tr">Gizlilik Politikası</h2>
+        <p lang="tr">Cihaz içi işlemler, isteğe bağlı hesap verileri, reklam onayı ve haklarınız.</p>
+        <span class="arrow" aria-hidden="true">Politikayı oku →</span>
+      </a>
+      <a class="language-card" href="privacy-policy.html#en" hreflang="en">
+        <small lang="en">ENGLISH</small>
+        <h2 lang="en">Privacy Policy</h2>
+        <p lang="en">On-device processing, optional account data, ad consent, and your choices.</p>
+        <span class="arrow" aria-hidden="true">Read the policy →</span>
+      </a>
+    </div>
+  </main>
+  <footer>
+    <div class="shell">
+      <span>Yayıncı / Publisher: Seda Sural</span>
+      <a href="mailto:zodiacup1@gmail.com">zodiacup1@gmail.com</a>
+      <span>28 Eylül 2026 · 28 September 2026</span>
+    </div>
+  </footer>
+</body>
+</html>

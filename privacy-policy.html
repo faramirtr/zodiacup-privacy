@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#11152f">
+  <meta name="description" content="ZodiaCup Türkçe ve İngilizce gizlilik politikası.">
+  <title>ZodiaCup · Gizlilik Politikası / Privacy Policy</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%2311152f'/%3E%3Cpath d='M16 23h29v14a13 13 0 0 1-13 13h-3a13 13 0 0 1-13-13V23Z' fill='none' stroke='%23e7bd66' stroke-width='4'/%3E%3Cpath d='M45 28h3a7 7 0 0 1 0 14h-5' fill='none' stroke='%23e7bd66' stroke-width='4'/%3E%3Cpath d='M25 9c-4 5 4 7 0 12M36 9c-4 5 4 7 0 12' fill='none' stroke='%23f3e7cc' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #f8f2e7;
+      --muted: #b9b7c8;
+      --night: #0a0d20;
+      --panel: #151a3c;
+      --panel-2: #10142e;
+      --line: #30375f;
+      --gold: #e7bd66;
+      --mint: #69d5c4;
+      --focus: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 6rem; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 86% 5%, rgba(105, 213, 196, .11), transparent 27rem),
+        var(--night);
+      font: 1rem/1.72 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    a { color: var(--mint); text-underline-offset: .18em; }
+    a:hover { color: #9fe9dd; }
+    a:focus-visible, summary:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; border-radius: .2rem; }
+    .skip-link {
+      position: fixed;
+      z-index: 5;
+      top: .75rem;
+      left: .75rem;
+      padding: .65rem 1rem;
+      border-radius: .55rem;
+      color: var(--night);
+      background: var(--focus);
+      transform: translateY(-180%);
+    }
+    .skip-link:focus { transform: translateY(0); }
+    .shell { width: min(74rem, calc(100% - 2rem)); margin-inline: auto; }
+    .topbar {
+      position: sticky;
+      z-index: 4;
+      top: 0;
+      border-bottom: 1px solid rgba(48, 55, 95, .78);
+      background: rgba(10, 13, 32, .91);
+      backdrop-filter: blur(16px);
+    }
+    .topbar .shell { display: flex; min-height: 4.5rem; align-items: center; justify-content: space-between; gap: 1rem; }
+    .brand { display: inline-flex; align-items: center; gap: .65rem; color: var(--ink); text-decoration: none; font-weight: 760; }
+    .mark { color: var(--gold); font-size: 1.25rem; }
+    .language-nav { display: flex; gap: .4rem; }
+    .language-nav a {
+      padding: .55rem .8rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--ink);
+      background: rgba(21, 26, 60, .82);
+      text-decoration: none;
+      font-size: .9rem;
+      font-weight: 700;
+    }
+    .language-nav a:hover { border-color: var(--gold); }
+    .hero { padding: clamp(3.5rem, 9vw, 7rem) 0 3.5rem; border-bottom: 1px solid var(--line); }
+    .eyebrow { margin: 0 0 .75rem; color: var(--mint); font-weight: 730; letter-spacing: .08em; text-transform: uppercase; font-size: .82rem; }
+    h1 { max-width: 15ch; margin: 0; font-size: clamp(2.5rem, 7vw, 5rem); line-height: 1; letter-spacing: -.05em; }
+    .lede { max-width: 48rem; margin: 1.25rem 0 0; color: var(--muted); font-size: clamp(1.05rem, 2vw, 1.22rem); }
+    .meta { display: flex; flex-wrap: wrap; gap: .7rem 1.5rem; margin: 2rem 0 0; padding: 0; list-style: none; color: var(--muted); font-size: .92rem; }
+    .meta strong { color: var(--ink); }
+    .policy-layout { display: grid; grid-template-columns: 15rem minmax(0, 1fr); gap: clamp(2rem, 6vw, 5rem); padding: 3rem 0 6rem; }
+    .toc { position: sticky; top: 6.4rem; align-self: start; }
+    .toc h2 { margin: 0 0 .8rem; font-size: .85rem; color: var(--mint); letter-spacing: .08em; text-transform: uppercase; }
+    .toc ul { margin: 0; padding: 0; list-style: none; }
+    .toc li + li { margin-top: .35rem; }
+    .toc a { display: block; padding: .3rem 0; color: var(--muted); text-decoration: none; }
+    .toc a:hover { color: var(--ink); }
+    article { min-width: 0; }
+    .language-section + .language-section { margin-top: 6rem; padding-top: 5rem; border-top: 1px solid var(--line); }
+    .language-title { margin: 0 0 2rem; font-size: clamp(2rem, 5vw, 3.3rem); line-height: 1.1; letter-spacing: -.035em; }
+    section { margin-top: 3.25rem; }
+    section h3 { margin: 0 0 1rem; font-size: clamp(1.35rem, 3vw, 1.8rem); line-height: 1.25; }
+    section h4 { margin: 1.5rem 0 .45rem; color: var(--gold); font-size: 1.05rem; }
+    p { margin: .85rem 0; }
+    ul { padding-left: 1.3rem; }
+    li + li { margin-top: .65rem; }
+    .callout {
+      margin: 1.5rem 0;
+      padding: 1.25rem;
+      border: 1px solid rgba(105, 213, 196, .35);
+      border-left: .3rem solid var(--mint);
+      border-radius: .85rem;
+      background: rgba(105, 213, 196, .06);
+    }
+    .data-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .85rem; margin-top: 1.25rem; }
+    .data-card { padding: 1.1rem; border: 1px solid var(--line); border-radius: .9rem; background: var(--panel-2); }
+    .data-card h4 { margin-top: 0; }
+    .data-card p { color: var(--muted); }
+    .contact-card { padding: 1.5rem; border: 1px solid rgba(231, 189, 102, .38); border-radius: 1rem; background: rgba(231, 189, 102, .07); }
+    .contact-card p:first-child { margin-top: 0; }
+    .contact-card p:last-child { margin-bottom: 0; }
+    footer { padding: 2rem 0; border-top: 1px solid var(--line); color: var(--muted); font-size: .92rem; }
+    footer .shell { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .75rem 1.5rem; }
+    @media (max-width: 52rem) {
+      .policy-layout { grid-template-columns: 1fr; }
+      .toc { position: static; padding: 1rem; border: 1px solid var(--line); border-radius: .85rem; background: var(--panel-2); }
+      .toc ul { columns: 2; }
+    }
+    @media (max-width: 38rem) {
+      .topbar .shell { min-height: 4rem; }
+      .brand span:last-child { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+      .data-grid { grid-template-columns: 1fr; }
+      .toc ul { columns: 1; }
+      .language-nav a { padding: .45rem .65rem; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    @media print {
+      :root { color-scheme: light; }
+      body { color: #171717; background: #fff; }
+      .topbar { position: static; background: #fff; }
+      .toc { display: none; }
+      .policy-layout { display: block; }
+      .data-card, .callout, .contact-card { color: #171717; background: #fff; border-color: #777; }
+      a { color: #174f55; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#policy">İçeriğe geç / Skip to content</a>
+  <header class="topbar">
+    <div class="shell">
+      <a class="brand" href="index.html" aria-label="ZodiaCup gizlilik ana sayfası">
+        <span class="mark" aria-hidden="true">☾</span><span>ZodiaCup</span>
+      </a>
+      <nav class="language-nav" aria-label="Dil / Language">
+        <a href="#tr" lang="tr">Türkçe</a>
+        <a href="#en" lang="en">English</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="policy">
+    <div class="hero">
+      <div class="shell">
+        <p class="eyebrow">ZodiaCup</p>
+        <h1>Gizlilik Politikası<br><span lang="en">Privacy Policy</span></h1>
+        <p class="lede">Uygulamadaki gerçek veri akışlarının sade ve dar kapsamlı açıklaması. A plain, focused account of the app’s actual data flows.</p>
+        <ul class="meta">
+          <li><strong>Yayıncı / Publisher:</strong> Seda Sural</li>
+          <li><strong>Yürürlük / Effective:</strong> 28 Eylül 2026 · 28 September 2026</li>
+          <li><a href="mailto:zodiacup1@gmail.com">zodiacup1@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="shell policy-layout">
+      <nav class="toc" aria-label="İçindekiler / Contents">
+        <h2>İçindekiler · Contents</h2>
+        <ul>
+          <li><a href="#tr">Türkçe politika</a></li>
+          <li><a href="#tr-veriler">İşlenen veriler</a></li>
+          <li><a href="#tr-reklam">AdMob ve UMP</a></li>
+          <li><a href="#tr-haklar">Haklar ve silme</a></li>
+          <li><a href="#en" lang="en">English policy</a></li>
+          <li><a href="#en-data" lang="en">Data processed</a></li>
+          <li><a href="#en-ads" lang="en">AdMob and UMP</a></li>
+          <li><a href="#en-rights" lang="en">Rights and deletion</a></li>
+        </ul>
+      </nav>
+
+      <article>
+        <div id="tr" class="language-section" lang="tr">
+          <h2 class="language-title">Gizlilik Politikası</h2>
+
+          <section aria-labelledby="tr-kapsam">
+            <h3 id="tr-kapsam">1. Kapsam ve veri sorumlusu</h3>
+            <p>Bu politika, ZodiaCup mobil uygulamasını ve bu politika sayfasını kapsar. Uygulamanın yayıncısı ve kişisel veriler bakımından veri sorumlusu Seda Sural’dır. Sorularınız veya talepleriniz için <a href="mailto:zodiacup1@gmail.com">zodiacup1@gmail.com</a> adresine yazabilirsiniz.</p>
+            <div class="callout"><strong>Kısa özet:</strong> Fal içeriklerinin büyük bölümü cihazda çalışır. Coffee fotoğrafları cihaz dışına yüklenmez. Hesap özelliğinin yapılandırıldığı bir dağıtımda hesap/profil verileri yalnız kullanıcı hesap açtığında veya giriş yaptığında Supabase’e aktarılır. Reklam özelliği yapılandırıldığında Google reklam ve onay hizmetleri ayrıca veri işleyebilir.</div>
+          </section>
+
+          <section id="tr-veriler" aria-labelledby="tr-veriler-baslik">
+            <h3 id="tr-veriler-baslik">2. Hangi verileri işleriz?</h3>
+            <div class="data-grid">
+              <div class="data-card">
+                <h4>Profil ve hesap</h4>
+                <p>Misafir kullanımında doğum tarihi, isteğe bağlı doğum saati, ülke/şehir/ilçe ve ilgi alanları yalnız açık uygulama oturumunda kullanılır. Hesap özelliğinin yapılandırıldığı bir dağıtımda hesap oluşturur veya giriş yaparsanız e-posta adresiniz ve kimlik doğrulama verileriniz Supabase Auth tarafından; profil alanlarınız ise hesabınıza bağlı olarak Supabase veritabanında işlenir. Parola ZodiaCup tarafından okunabilir düz metin olarak saklanmaz.</p>
+              </div>
+              <div class="data-card">
+                <h4>Yerel tercihler</h4>
+                <p>Ana ekran kartlarının sırası ve görünürlüğü, bildirim seçimleri ve saatleri, Coffee fotoğraf oturumu için teknik kayıtlar ve isteğe bağlı Tarot geçmişi cihazınızdaki uygulama depolamasında tutulur. Tarot geçmişi varsayılan olarak kapalıdır ve açıldığında en fazla 50 okuma saklar.</p>
+              </div>
+              <div class="data-card">
+                <h4>Coffee fotoğrafları</h4>
+                <p>Kamera veya fotoğraf arşivi ancak siz ilgili seçeneğe dokunduğunuzda açılır. Seçilen fincan ve tabak fotoğraflarının geçici kopyaları uygulamanın geçici dizininde oluşturulur ve piksel analizi cihazda yapılır. Fotoğraflar varsayılan olarak paylaşılmaz, buluta yüklenmez ve reklam sağlayıcısına gönderilmez.</p>
+              </div>
+              <div class="data-card">
+                <h4>Tarot, Coffee ve Horoscope</h4>
+                <p>Tarot kartları ve yorum akışı ile günlük burç içerikleri uygulamadaki yerel içerik ve hesaplamaları kullanır. Coffee sonucu, seçilen fotoğrafların yerel görüntü analiziyle oluşturulur. Uygulamada genel amaçlı analytics veya ayrı bir davranış izleme SDK’sı bulunmaz.</p>
+              </div>
+              <div class="data-card">
+                <h4>Widget ve bildirimler</h4>
+                <p>Widget için gün, dil, burç kimliği, kısa burç özeti, günün rengi ve durum metni cihazda paylaşılan uygulama/widget alanına yazılır. Bildirim tercihleri ve günlük saatler cihazda saklanır; bildirimler işletim sistemi tarafından yerel olarak planlanır. Bildirim izni yalnız özelliği açtığınızda istenir.</p>
+              </div>
+              <div class="data-card">
+                <h4>Yerel paylaşım</h4>
+                <p>Paylaş dediğinizde sonuç metni ve oluşturulan tanıtım kartı PNG’si cihazda hazırlanır ve sistem paylaşım sayfasına verilir. Coffee fotoğraflarının kendisi paylaşım kartına eklenmez. Alıcı uygulamayı siz seçersiniz; seçtiğiniz uygulamanın kendi gizlilik koşulları geçerlidir.</p>
+              </div>
+            </div>
+          </section>
+
+          <section aria-labelledby="tr-amac">
+            <h3 id="tr-amac">3. Kullanım amaçları ve dayanak</h3>
+            <p>Verileri; istediğiniz fal ve kişiselleştirme özelliklerini sunmak, isteğe bağlı hesabı yönetmek, tercihlerinizi hatırlamak, yerel bildirim ve widget’ı çalıştırmak, güvenliği ve hata toleransını sağlamak ve onay verildiğinde ödüllü reklam göstermek için işleriz.</p>
+            <p>Uygulanabilir hukuka göre işlem dayanağı; talep ettiğiniz hizmetin sunulması, açık rızanız (özellikle gerekli olduğu yerlerde reklam kişiselleştirmesi/cihaz erişimi), hukuki yükümlülükler veya hizmetin güvenli şekilde işletilmesine ilişkin meşru menfaatler olabilir. Bir dayanak seçme hakkınız varsa, ilgili onay ekranı veya cihaz ayarı üzerinden tercihinizi kullanabilirsiniz.</p>
+          </section>
+
+          <section id="tr-reklam" aria-labelledby="tr-reklam-baslik">
+            <h3 id="tr-reklam-baslik">4. Google AdMob ve UMP onayı</h3>
+            <p>Reklam özelliği yapılandırıldığında ZodiaCup, Tarot ve Coffee akışlarındaki belirli erişim noktalarında yalnız kullanıcının başlattığı ödüllü reklamları göstermek için Google Mobile Ads (AdMob) SDK’sını kullanır. Google User Messaging Platform (UMP), uygulama açılışında bölgeniz için gerekli onay bilgisini günceller ve gerekiyorsa bir onay formu gösterir. Reklam SDK’sı, UMP reklam isteğine izin vermeden reklam yüklemek için başlatılmaz.</p>
+            <p>Google; reklam sunumu, sıklık sınırlama, ölçüm, dolandırıcılığı önleme ve onay yönetimi için IP adresi, yaklaşık konum, uygulama ve cihaz bilgileri, reklam etkileşimleri, tanımlayıcılar ve tanılama verileri gibi bilgileri işleyebilir. Gösterilen reklamın kişiselleştirilmiş olup olmaması; bölgenize, onay seçiminize, cihaz ayarlarınıza ve Google’ın kurallarına bağlıdır. Android sürümü reklam kimliği ile Privacy Sandbox reklam izinlerini manifestten kaldırır; iOS sürümü uygulamalar arası takip izni istemez. Bu teknik sınırlamalar, Google’ın reklam sunumu için hiçbir veri işlemeyeceği anlamına gelmez.</p>
+            <p>UMP’nin gerektirdiği bölgelerde, uygulamadaki “Gizlilik seçenekleri” üzerinden seçiminizi yeniden açabilirsiniz. Ayrıca cihazınızın reklam/gizlilik ayarlarını kullanabilirsiniz. Ayrıntılar için <a href="https://policies.google.com/technologies/partner-sites" rel="noopener noreferrer">Google’ın iş ortağı uygulamalarından gelen verileri nasıl kullandığını</a>, <a href="https://support.google.com/admob/answer/7676680" rel="noopener noreferrer">kişiselleştirilmiş ve kişiselleştirilmemiş reklam açıklamasını</a> ve <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Gizlilik Politikası’nı</a> inceleyin.</p>
+          </section>
+
+          <section aria-labelledby="tr-saklama">
+            <h3 id="tr-saklama">5. Saklama ve silme</h3>
+            <ul>
+              <li><strong>Misafir profil yanıtları:</strong> açık uygulama oturumunda bellekte tutulur; uygulama süreci sona erdiğinde kalıcı profil olarak saklanmaz.</li>
+              <li><strong>Hesap ve bulut profili:</strong> hesap özelliği yapılandırılmışsa, hesabınız ve profiliniz hizmetin sunulması için gerekli olduğu sürece tutulabilir. Silme talebinde bulunabilirsiniz; bazı kayıtların daha uzun saklanması hukuken gerekebilir.</li>
+              <li><strong>Yerel tercihler ve Tarot geçmişi:</strong> siz değiştirene, ilgili geçmişi kapatıp temizleyene, uygulama verisini temizleyene veya uygulamayı kaldırana kadar. İşletim sistemi yedekleri, cihaz ve hesap ayarlarınıza göre kopyaları daha uzun süre tutabilir.</li>
+              <li><strong>Coffee fotoğraf kopyaları:</strong> okuma oturumu, değiştirme veya kaldırma sırasında temizlenmek üzere geçici tutulur. Android’de kesintiye uğramış bir seçim en fazla 24 saat içinde kurtarılabilir; sahipsiz geçici kopyalar sonraki kurtarma/temizlikte silinir.</li>
+              <li><strong>Paylaşım PNG’leri:</strong> sistem paylaşımına teslim gerektirdiğinde geçici önbellekte tutulabilir; uygulama 24 saatten eski öğeleri ve sekiz dosyayı aşan eski öğeleri en iyi gayretle temizler.</li>
+              <li><strong>Reklam ve onay verileri:</strong> Google tarafından kendi saklama kuralları ve seçiminiz doğrultusunda tutulur.</li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="tr-paylasim">
+            <h3 id="tr-paylasim">6. Hizmet sağlayıcılar ve uluslararası aktarım</h3>
+            <p>Hesap özelliği yapılandırılmışsa Supabase, kimlik doğrulama ve hesapla ilişkili profil saklama hizmeti sağlar. Google, AdMob reklamları ve UMP onay yönetimi için hizmet sağlayıcıdır. Bu sağlayıcılar verileri Türkiye veya ikamet ülkeniz dışındaki ülkelerde işleyebilir. Aktarım ve koruma mekanizmaları sağlayıcının altyapısına, seçilen bölgeye ve uygulanabilir hukuka göre değişir. Bkz. <a href="https://supabase.com/privacy" rel="noopener noreferrer">Supabase Gizlilik Politikası</a> ve <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Gizlilik Politikası</a>.</p>
+            <p>Paylaşım özelliğinde veri, yalnız sistem paylaşım sayfasında seçtiğiniz uygulamaya gönderilir. ZodiaCup kişisel profilinizi veya Coffee fotoğraflarını reklam sağlayıcısına iletmek üzere özel bir bağlantı kurmaz.</p>
+          </section>
+
+          <section aria-labelledby="tr-guvenlik">
+            <h3 id="tr-guvenlik">7. Güvenlik</h3>
+            <p>Veriyi mümkün olduğunda cihazda tutma, geçici dosyaları sınırlandırma, reklamları onay kapısının arkasında başlatma ve hesap hizmetlerinde güvenli ağ bağlantıları kullanma gibi önlemler uygulanır. Bununla birlikte hiçbir cihaz, ağ veya depolama yöntemi tamamen risksiz değildir; mutlak güvenlik garantisi veremeyiz.</p>
+          </section>
+
+          <section id="tr-haklar" aria-labelledby="tr-haklar-baslik">
+            <h3 id="tr-haklar-baslik">8. Haklarınız ve silme talebi</h3>
+            <p>Bulunduğunuz yere göre verilerinize erişme, düzeltme, silme, işlemeyi kısıtlama veya itiraz etme, taşınabilirlik talep etme ve verdiğiniz onayı ileriye dönük geri çekme haklarına sahip olabilirsiniz. Bu haklar yasal koşullara ve istisnalara tabidir.</p>
+            <div class="contact-card">
+              <p><strong>Hesap/profil silme veya gizlilik talebi:</strong></p>
+              <p><a href="mailto:zodiacup1@gmail.com?subject=ZodiaCup%20veri%20silme%20talebi">zodiacup1@gmail.com</a> adresine, hesabınızda kullandığınız e-posta adresinden yazın. Kimliğinizi ve talebin kapsamını doğrulamak için yalnız gerekli ek bilgileri isteyebiliriz.</p>
+              <p>Cihazdaki yerel verileri uygulamadaki ilgili ayarlardan, uygulama verisini temizleyerek veya uygulamayı kaldırarak silebilirsiniz. UMP seçimini, uygulamada seçenek sunulduğunda “Gizlilik seçenekleri”nden güncelleyebilirsiniz.</p>
+            </div>
+            <p>Ayrıca bulunduğunuz yerdeki yetkili veri koruma makamına şikâyette bulunma hakkınız olabilir.</p>
+          </section>
+
+          <section aria-labelledby="tr-cocuk">
+            <h3 id="tr-cocuk">9. Çocukların gizliliği</h3>
+            <p>ZodiaCup 13 yaşından küçük çocuklara yönelik değildir ve 13 yaşından küçük çocuklardan bilerek hesap veya profil verisi toplamayı amaçlamaz. Uygulanabilir hukuk daha yüksek bir yaşta ebeveyn izni gerektiriyorsa, hizmet yalnız gerekli izinle kullanılmalıdır. Bir çocuğun veri sağladığını düşünüyorsanız silme talebi için bizimle iletişime geçin.</p>
+          </section>
+
+          <section aria-labelledby="tr-site">
+            <h3 id="tr-site">10. Bu politika sitesi</h3>
+            <p>Bu statik sitede tarafımızca eklenmiş çerez, analytics, reklam, izleyici, harici yazı tipi veya istemci tarafı script bulunmaz. Site GitHub Pages üzerinden sunulur; GitHub, hizmet güvenliği ve işletimi için sunucu kayıtları gibi teknik verileri kendi koşulları altında işleyebilir. Ayrıntılar için <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">GitHub Gizlilik Bildirimi’ne</a> bakın.</p>
+          </section>
+
+          <section aria-labelledby="tr-degisiklik">
+            <h3 id="tr-degisiklik">11. Değişiklikler ve iletişim</h3>
+            <p>Uygulamanın işlevleri veya hukuki gereklilikler değişirse bu politika güncellenebilir. Önemli değişiklikleri uygun bir uygulama içi bildirimle, mağaza kaydıyla veya bu sayfada yeni yürürlük tarihini yayımlayarak duyurabiliriz. Sorularınız için <a href="mailto:zodiacup1@gmail.com">zodiacup1@gmail.com</a> adresine ulaşın.</p>
+          </section>
+        </div>
+
+        <div id="en" class="language-section" lang="en">
+          <h2 class="language-title">Privacy Policy</h2>
+
+          <section aria-labelledby="en-scope">
+            <h3 id="en-scope">1. Scope and controller</h3>
+            <p>This policy covers the ZodiaCup mobile app and this policy website. The publisher and controller responsible for personal data is Seda Sural. For questions or requests, email <a href="mailto:zodiacup1@gmail.com">zodiacup1@gmail.com</a>.</p>
+            <div class="callout"><strong>In short:</strong> Most reading features run on your device. Coffee photos are not uploaded off-device. In a build where the account feature is configured, account/profile data is sent to Supabase only when the user creates an account or signs in. When advertising is configured, Google’s advertising and consent services may process data separately.</div>
+          </section>
+
+          <section id="en-data" aria-labelledby="en-data-heading">
+            <h3 id="en-data-heading">2. What data do we process?</h3>
+            <div class="data-grid">
+              <div class="data-card">
+                <h4>Profile and account</h4>
+                <p>As a guest, your birth date, optional birth time, country/city/district, and focus areas are used only during the open app session. In a build where the account feature is configured, if you create an account or sign in, your email address and authentication data are processed by Supabase Auth, and your profile fields are stored in Supabase linked to your account. ZodiaCup does not store your password as readable plain text.</p>
+              </div>
+              <div class="data-card">
+                <h4>Local preferences</h4>
+                <p>Home-card order and visibility, notification choices and times, technical records for a Coffee photo session, and optional Tarot history are stored in app storage on your device. Tarot history is off by default and stores up to 50 readings when enabled.</p>
+              </div>
+              <div class="data-card">
+                <h4>Coffee photos</h4>
+                <p>The camera or photo library opens only after you choose that option. Temporary copies of selected cup and saucer photos are created in the app’s temporary directory and pixel analysis runs on-device. Photos are not shared by default, uploaded to the cloud, or sent to the advertising provider.</p>
+              </div>
+              <div class="data-card">
+                <h4>Tarot, Coffee, and Horoscope</h4>
+                <p>Tarot cards and readings and daily horoscope content use local content and calculations included in the app. Coffee results are created from on-device image analysis of selected photos. The app contains no general-purpose analytics or separate behavioral-tracking SDK.</p>
+              </div>
+              <div class="data-card">
+                <h4>Widget and notifications</h4>
+                <p>For the widget, the date, language, zodiac-sign ID, short horoscope summary, color-of-the-day details, and status text are written to a shared app/widget area on the device. Notification preferences and daily times are stored locally, and the operating system schedules local notifications. Notification permission is requested only when you enable the feature.</p>
+              </div>
+              <div class="data-card">
+                <h4>Native sharing</h4>
+                <p>When you choose Share, result text and a promotional-card PNG are generated on-device and passed to the system share sheet. Coffee photos themselves are not included in the share card. You choose the recipient app, whose own privacy terms then apply.</p>
+              </div>
+            </div>
+          </section>
+
+          <section aria-labelledby="en-purpose">
+            <h3 id="en-purpose">3. Purposes and legal basis</h3>
+            <p>We process data to provide the readings and personalization you request, operate an optional account, remember your choices, run local notifications and the widget, maintain security and resilience, and show rewarded ads when consent permits.</p>
+            <p>Depending on applicable law, the legal basis may be performance of the service you request, your consent (particularly for ad personalization or device access where required), compliance with legal obligations, or legitimate interests in operating the service securely. Where you have a choice, you can exercise it through the relevant consent prompt or device setting.</p>
+          </section>
+
+          <section id="en-ads" aria-labelledby="en-ads-heading">
+            <h3 id="en-ads-heading">4. Google AdMob and UMP consent</h3>
+            <p>When advertising is configured, ZodiaCup uses the Google Mobile Ads (AdMob) SDK solely for user-initiated rewarded ads at certain access points in the Tarot and Coffee flows. Google’s User Messaging Platform (UMP) refreshes consent information at app launch and shows a consent form where required for your region. The advertising SDK is not initialized to load an ad until UMP reports that ads may be requested.</p>
+            <p>For ad delivery, frequency capping, measurement, fraud prevention, and consent management, Google may process information such as IP address, approximate location, app and device information, ad interactions, identifiers, and diagnostics. Whether an ad is personalized depends on your region, consent choice, device settings, and Google’s rules. The Android build removes advertising-ID and Privacy Sandbox advertising permissions from its manifest; the iOS build does not request cross-app tracking permission. These technical limits do not mean that Google processes no data for ad delivery.</p>
+            <p>Where UMP requires it, you can reopen your choice through “Privacy options” in the app. You can also use your device’s advertising and privacy settings. Learn more in <a href="https://policies.google.com/technologies/partner-sites" rel="noopener noreferrer">How Google uses data from partner apps</a>, Google’s explanation of <a href="https://support.google.com/admob/answer/7676680" rel="noopener noreferrer">personalized and non-personalized ads</a>, and the <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a>.</p>
+          </section>
+
+          <section aria-labelledby="en-retention">
+            <h3 id="en-retention">5. Retention and deletion</h3>
+            <ul>
+              <li><strong>Guest profile answers:</strong> held in memory for the open app session and not kept as a persistent profile after the app process ends.</li>
+              <li><strong>Account and cloud profile:</strong> if the account feature is configured, your account and profile may be retained for as long as needed to provide the service. You may request deletion; some records may need to be retained longer where legally required.</li>
+              <li><strong>Local preferences and Tarot history:</strong> retained until you change them, disable and clear the relevant history, clear app data, or uninstall the app. Operating-system backups may retain copies longer depending on your device and account settings.</li>
+              <li><strong>Coffee photo copies:</strong> temporary and scheduled for cleanup when the reading session ends or a photo is replaced or removed. On Android, an interrupted selection may be recovered for up to 24 hours; abandoned temporary copies are removed during later recovery or cleanup.</li>
+              <li><strong>Share PNG files:</strong> may remain in a temporary cache when needed for delivery to the system share sheet; the app makes a best-effort cleanup of items older than 24 hours and older items beyond eight files.</li>
+              <li><strong>Advertising and consent data:</strong> retained by Google under its own retention rules and your choices.</li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="en-providers">
+            <h3 id="en-providers">6. Service providers and international transfers</h3>
+            <p>When the account feature is configured, Supabase provides authentication and account-linked profile storage. Google provides AdMob ads and UMP consent management. These providers may process data outside Türkiye or your country of residence. Transfer and protection mechanisms vary with the provider’s infrastructure, selected region, and applicable law. See the <a href="https://supabase.com/privacy" rel="noopener noreferrer">Supabase Privacy Policy</a> and <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a>.</p>
+            <p>For native sharing, data goes only to the app you choose in the system share sheet. ZodiaCup does not create a custom connection that sends your personal profile or Coffee photos to the advertising provider.</p>
+          </section>
+
+          <section aria-labelledby="en-security">
+            <h3 id="en-security">7. Security</h3>
+            <p>Measures include keeping data on-device where practical, limiting temporary files, placing advertising behind a consent gate, and using secure network connections for account services. No device, network, or storage method is completely risk-free, so we cannot guarantee absolute security.</p>
+          </section>
+
+          <section id="en-rights" aria-labelledby="en-rights-heading">
+            <h3 id="en-rights-heading">8. Your rights and deletion requests</h3>
+            <p>Depending on where you live, you may have rights to access, correct, delete, restrict or object to processing, request portability, and withdraw consent prospectively. These rights are subject to applicable legal conditions and exceptions.</p>
+            <div class="contact-card">
+              <p><strong>Account/profile deletion or privacy request:</strong></p>
+              <p>Email <a href="mailto:zodiacup1@gmail.com?subject=ZodiaCup%20data%20deletion%20request">zodiacup1@gmail.com</a> from the address used for your account. We may ask only for the additional information needed to verify your identity and the scope of the request.</p>
+              <p>You can delete on-device data through the relevant app settings, by clearing app data, or by uninstalling the app. You can update a UMP choice through “Privacy options” when that option is available in the app.</p>
+            </div>
+            <p>You may also have the right to complain to the competent data-protection authority where you live.</p>
+          </section>
+
+          <section aria-labelledby="en-children">
+            <h3 id="en-children">9. Children’s privacy</h3>
+            <p>ZodiaCup is not directed to children under 13, and we do not intend to knowingly collect account or profile data from children under 13. Where applicable law requires parental permission at a higher age, the service should be used only with that permission. If you believe a child has provided data, contact us to request deletion.</p>
+          </section>
+
+          <section aria-labelledby="en-site">
+            <h3 id="en-site">10. This policy website</h3>
+            <p>We add no cookies, analytics, ads, trackers, external fonts, or client-side scripts to this static site. The site is served through GitHub Pages; GitHub may process technical data such as server logs under its own terms for service operation and security. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">GitHub Privacy Statement</a>.</p>
+          </section>
+
+          <section aria-labelledby="en-changes">
+            <h3 id="en-changes">11. Changes and contact</h3>
+            <p>We may update this policy when app functions or legal requirements change. We may communicate material changes through an appropriate in-app notice, store listing, or a new effective date on this page. Questions can be sent to <a href="mailto:zodiacup1@gmail.com">zodiacup1@gmail.com</a>.</p>
+          </section>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="shell">
+      <span>© 2026 ZodiaCup · Seda Sural</span>
+      <a href="index.html">Gizlilik ana sayfası / Privacy home</a>
+      <a href="mailto:zodiacup1@gmail.com">zodiacup1@gmail.com</a>
+    </div>
+  </footer>
+</body>
+</html>
